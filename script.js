@@ -195,7 +195,7 @@ function startNewGame() {
   incorrect.classList.remove('visible');
   finalMsg.classList.remove('visible');
   lmsg.classList.remove('visible');
-  document.getElementById("stand").src = `/images/pic0.png` 
+  document.getElementById("stand").src = `images/pic0.png` 
   document.getElementById("wrong-count").innerText = "6"
   window.addEventListener('keyup', check);
 
