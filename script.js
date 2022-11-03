@@ -82,7 +82,7 @@ function displayIndication() {
 function updateImg() {
     incorrectCount++
     if (incorrectCount < 7){
-      document.getElementById("stand").src = `/images/pic${incorrectCount}.png`
+      document.getElementById("stand").src = `images/pic${incorrectCount}.png`
     }
 
 }
