@@ -14,42 +14,40 @@ const losing = document.getElementById('lost')
 // List of words
 const wordList = [
   'adam',
-  // 'alexandra',
-  // 'andres',
-  // 'angela',
-  // 'anna',
-  // 'antonio',
-  // 'carolin',
-  // 'carolina',
-  // 'costache',
-  // 'daniel',
-  // 'daniela',
-  // 'ekta',
-  // 'ervin',
-  // 'ezequiel',
-  // 'fernando',
-  // 'fiodor',
-  // 'frances',
-  // 'ioannis',
-  // 'iwona',
-  // 'jakob',
-  // 'josip',
-  // 'marco',
-  // 'matias',
-  // 'melissa',
-  // 'micaela',
-  // 'nicolas',
-  // 'pablo',
-  // 'ruben',
-  // 'sijin',
-  // 'tomas',
-  // 'toni',
-  // 'vika',
-  // 'zoey',
+  'alexandra',
+  'andres',
+  'angela',
+  'anna',
+  'antonio',
+  'carolin',
+  'carolina',
+  'costache',
+  'daniel',
+  'daniela',
+  'ekta',
+  'ervin',
+  'ezequiel',
+  'fernando',
+  'fiodor',
+  'frances',
+  'ioannis',
+  'iwona',
+  'jakob',
+  'josip',
+  'marco',
+  'matias',
+  'melissa',
+  'micaela',
+  'nicolas',
+  'pablo',
+  'ruben',
+  'sijin',
+  'tomas',
+  'toni',
+  'vika',
+  'zoey',
 ];
 
-//Global Variable to decide win or lose
-let winLose = null;
 // Word that is selected to play
 let selectedWord = null;
 // Stores the count of no.of incorrectly typed letters
@@ -101,7 +99,7 @@ function updateImg() {
 
 
 function successState() {
-    //setting winLose variable to string "win"
+
   finalMsg.classList.add('visible')
   window.removeEventListener('keyup', check);
 
@@ -110,7 +108,6 @@ function successState() {
 
 // When player loses
 function failureState() {
-  //setting winLose variable to string "lose"
 
 lmsg.classList.add('visible') 
 document.getElementById('secondSpan').innerText = `"${selectedWord}"`
@@ -124,9 +121,6 @@ function check(ev) {
   const character = ev.key;
 
   // Handle keyboard events
-
-  //if statement to check winLose state
-  //if not "win" or "lose" then great, go ahead,if so, cant do it
 
   if (
     !indication.classList.contains('visible') &&
