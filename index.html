@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game </title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Hangman Game</h1>
+    <p>
+      Find the hidden name from the class - Enter a letter
+    </p>
+  </div>
+        <div>
+          <h3 id="guesses" class="guesses">
+          Guess left : <span id="wrong-count">6</span>
+          </h3>
+          <img src="/images/pic0.png" alt="" id="stand" class="picture">
+          <!-- <img src="/images/pic1.png" class="picture" id="firstImg"alt=""> -->
+          <!-- <img src="/images/pic2.png" class="pics" alt="">
+          <img src="/images/pic3.png" class="pics" alt="">
+          <img src="/images/pic4.png" class="pics" alt="">
+          <img src="/images/pic5.png" class="pics" alt="">
+          <img src="/images/pic6.png" class="pics" alt=""> -->
+
+          <div class="content">
+            <ul id="word" class="word"></ul>
+            <div id="incorrect" class="incorrect">
+              <h2>Incorrect :</h2>
+              <p></p>
+            </div>
+          </div>
+          <div id="final-msg" class="final-msg">
+            <div id="msg-info" class="msg-info">
+              <h2 class="win-msg">Congratulations, you won. 😃</h2>
+              <button id="play" class="play">Play Again</button>  
+            </div>   
+          </div>
+          <div id="l-msg" class="l-msg">
+            <div id="lmsg" class="lmsg">
+              <h2 class="lose-msg">Unfortunately, you lost. 😕
+                <span id="firstSpan"> 
+                  The correct name was
+                  <span id="secondSpan" class="secondSpan">
+
+                  </span>
+                </span>
+              </h2>
+              <button id="play2" class="play">Play Again</button>  
+            </div>   
+          </div>
+          <div id="indication" class="indication">
+            <p>You have already entered this letter</p>
+          </div>
+
+
+        </div>
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
